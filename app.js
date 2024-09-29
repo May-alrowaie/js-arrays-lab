@@ -20,16 +20,11 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
-//console.log('Exercise 2 result:', foods);
-
-// Initialize the foods array
 let foods = []
 
-// Add 'pizza' and 'cheeseburger' to the foods array
 foods.unshift("pizza", "cheeseburger")
 
-// Log the result
-console.log("Exercise 2 result:", foods) // Should output: ['pizza', 'cheeseburger']
+console.log("Exercise 2 result:", foods)
 
 /*
 Exercise 3: Insert at the beginning
@@ -41,14 +36,11 @@ Complete Exercise 3 in the space below:
 
 //console.log("Exercise 3 result:", foods)
 
-// Assuming the foods array is already defined and contains items
 let foodss = ["pizza", "cheeseburger"]
 
-// Insert 'taco' at the beginning of the foods array
 foodss.unshift("taco")
 
-// Log the result
-console.log("Exercise 3 result:", foodss) // Should output: ['taco', 'pizza', 'cheeseburger']
+console.log("Exercise 3 result:", foodss)
 
 /*
 Exercise 4: Access an array element
@@ -61,17 +53,11 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-//console.log("Exercise 4 result:", favFood)
-
-// Assuming the foods array is already defined
-
 let foodsss = ["taco", "pizza", "cheeseburger"]
 
-// Access the 'pizza' string by its index and assign it to favFood
-let favFood = foodsss[1] // 'pizza' is at index 1
+let favFood = foodsss[1]
 
-// Log the result
-console.log("Exercise 4 result:", favFood) // Should output: 'pizza'
+console.log("Exercise 4 result:", favFood)
 
 /*
 splice(start)
@@ -90,14 +76,12 @@ Complete Exercise 5 in the space below:
 */
 
 //console.log('Exercise 5 result:', foods);
-// Assuming the foods array is already defined
+
 let foods3 = ["taco", "pizza", "cheeseburger"]
 
-// Insert 'tofu' between 'pizza' and 'cheeseburger'
-foods3.splice(2, 0, "tofu") // 2 is the index where 'tofu' will be inserted
+foods3.splice(2, 0, "tofu")
 
-// Log the result
-console.log("Exercise 5 result:", foods3) // Should output: ['taco', 'pizza', 'tofu', 'cheeseburger']
+console.log("Exercise 5 result:", foods3)
 
 /*
 Exercise 6: Replace elements
@@ -109,14 +93,11 @@ Complete Exercise 6 in the space below:
 
 //console.log('Exercise 6 result:', foods);
 
-// Assuming the foods array is already defined
 let foods6 = ["taco", "pizza", "tofu", "cheeseburger"]
 
-// Replace 'pizza' with 'sushi' and 'cupcake'
-foods6.splice(1, 1, "sushi", "cupcake") // 1 is the index of 'pizza', 1 indicates removing one element
+foods6.splice(1, 1, "sushi", "cupcake")
 
-// Log the result
-console.log("Exercise 6 result:", foods6) // Should output: ['taco', 'sushi', 'cupcake', 'tofu', 'cheeseburger']
+console.log("Exercise 6 result:", foods6)
 
 /*
 Exercise 7: Using the `slice()` method
@@ -130,15 +111,11 @@ Complete Exercise 7 in the space below:
 */
 //console.log("Exercise 7 result:", yummy)
 
-// Assuming the foods array is already defined
 let foods7 = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"]
 
-// Use the slice() method to create a new array with 'sushi' and 'cupcake'
-let yummy = foods7.slice(1, 3) // 1 is the start index, 3 is the end index (exclusive)
+let yummy = foods7.slice(1, 3)
 
-// Log the result
-console.log("Exercise 7 result:", yummy) // Should output: ['sushi', 'cupcake']
-
+console.log("Exercise 7 result:", yummy)
 /*
 Exercise 8: Finding an index
 
@@ -151,14 +128,11 @@ Complete Exercise 8 in the space below:
 */
 //console.log('Exercise 8 result:', soyIdx);
 
-// Assuming the foods array is already defined
 let foods8 = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"]
 
-// Use indexOf() to find the index of 'tofu'
 let soyIdx = foods8.indexOf("tofu")
 
-// Log the result
-console.log("Exercise 8 result:", soyIdx) // Should output: 3
+console.log("Exercise 8 result:", soyIdx)
 
 /*
 Exercise 9: Joining elements
@@ -175,15 +149,11 @@ Complete Exercise 9 in the space below:
 */
 //console.log('Exercise 9 result:', allFoods);
 
-// Assuming the foods array is already defined
 let foods9 = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"]
 
-// Use join() to concatenate the strings in the foods array, separated by ' -> '
 let allFoods = foods9.join(" -> ")
 
-// Log the result
-console.log("Exercise 9 result:", allFoods) // Should output: 'taco -> sushi -> cupcake -> tofu -> cheeseburger'
-
+console.log("Exercise 9 result:", allFoods)
 /*
 Exercise 10: Check for an element
 
@@ -195,14 +165,12 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 //console.log('Exercise 10 result:', hasSoup);
-// Assuming the foods array is already defined
+
 let foods10 = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"]
 
-// Use includes() to check if the array contains 'soup'
 let hasSoup = foods10.includes("soup")
 
-// Log the result
-console.log("Exercise 10 result:", hasSoup) // Should output: false
+console.log("Exercise 10 result:", hasSoup)
 /*
 Exercise 11: Odd numbers from an array
 
@@ -218,23 +186,6 @@ Complete Exercise 11 in the space below:
 //const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
 //console.log('Exercise 11 result:', odds);
-
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
-
-// Initialize an empty array to hold odd numbers
-let odds = []
-
-// Use forEach to iterate through the nums array
-nums.forEach((num) => {
-  // Check if the number is odd
-  if (num % 2 !== 0) {
-    // Push the odd number to the odds array
-    odds.push(num)
-  }
-})
-
-// Log the result
-console.log("Exercise 11 result:", odds) // Should output: [5, 23, 15, 21, 9, 45, 7, 81]
 
 /*
 Exercise 12: FizzBuzz with arrays
@@ -261,29 +212,27 @@ Complete Exercise 12 in the space below:
 
 const nums1 = [3, 5, 15, 18, 20, 30, 33, 45, 50, 60]
 
-// Initialize empty arrays for fizz, buzz, and fizzbuzz
 let fizz = []
 let buzz = []
 let fizzbuzz = []
 
-// Use forEach to iterate through the nums array
 nums1.forEach((num) => {
   if (num % 3 === 0) {
-    fizz.push(num) // Push to fizz if divisible by 3
+    fizz.push(num)
   }
   if (num % 5 === 0) {
-    buzz.push(num) // Push to buzz if divisible by 5
+    buzz.push(num)
   }
   if (num % 3 === 0 && num % 5 === 0) {
-    fizzbuzz.push(num) // Push to fizzbuzz if divisible by both 3 and 5
+    fizzbuzz.push(num)
   }
 })
 
 // Log the results
 console.log("Exercise 12 Results:")
-console.log("  fizz:", fizz) // Contains numbers divisible by 3 //fizz: (7) [3, 15, 18, 30, 33, 45, 60]
-console.log("  buzz:", buzz) // Contains numbers divisible by 5 //buzz: (7) [5, 15, 20, 30, 45, 50, 60]
-console.log("  fizzbuzz:", fizzbuzz) // Contains numbers divisible by both 3 and 5 //fizzbuzz: (4) [15, 30, 45, 60]
+console.log("  fizz:", fizz)
+console.log("  buzz:", buzz)
+console.log("  fizzbuzz:", fizzbuzz)
 
 /*
 Exercise 13: Retrieve the Last Array
@@ -313,11 +262,9 @@ const numArrays1 = [
   [7, 81, 90],
 ]
 
-// Assign the last nested array to numList
 const numList = numArrays1[numArrays1.length - 1]
 
-// Log the result
-console.log("Exercise 13 result:", numList) // Should output: [7, 81, 90]
+console.log("Exercise 13 result:", numList)
 
 /*
 Exercise 14: Accessing within nested arrays
@@ -338,12 +285,9 @@ const numArrays2 = [
   [7, 81, 90],
 ]
 
-// Retrieve the number 66 from the numArrays array
-const num = numArrays2[2][1] // Access the third nested array and the second element
+const num = numArrays2[2][1]
 
-// Log the result
-console.log("Exercise 14 result:", num) // Should output: 66
-
+console.log("Exercise 14 result:", num)
 /*
 Exercise 15: Nested array sum
 
@@ -365,17 +309,12 @@ const numArrays = [
   [7, 81, 90],
 ]
 
-// Initialize the total variable to 0
 let total = 0
 
-// Use nested forEach to iterate through the numArrays
 numArrays.forEach((innerArray) => {
   innerArray.forEach((num) => {
-    total += num // Add each number to the total
+    total += num
   })
 })
 
-// Log the result
-console.log("Exercise 15 result:\n", total) // Should output the sum of all numbers
-//Exercise 15 result:534
-// the End :)
+console.log("Exercise 15 result:\n", total)
